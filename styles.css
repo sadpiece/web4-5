@@ -7,11 +7,12 @@ html, body {
   height: 100%;
 }
 
-.header {
-  height: 150px; 
-  margin: 5px 0px; 
-  text-align: center;
-  background-color: rgb(220, 225, 230); 
+.header img {
+  max-height: 200px; 
+  width: 50%;       
+  margin-top: 10px;
+  margin-left: 400px;  
+  border-radius: 10px; 
 }
 
 .main {
