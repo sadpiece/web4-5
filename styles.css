@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  height: 150px; 
+  margin: 5px 0px; 
+  text-align: center;
+  background-color: rgb(220, 225, 230); 
+}
+
+.main {
+  min-height: 100%;
+  position: relative;
+  background-color: rgb(242, 244, 247); 
+  margin: 5px 0px;
+}
+
+
+#nav {
+  list-style: none;
+  font-weight: bold;
+  background: #343a40; 
+  padding: 7px 0 9px;
+  margin: 5px 0;
+  text-align: center; 
+}
+
+#nav li {
+  display: inline-block; 
+  position: relative;
+  margin: 0 5px;
+  vertical-align: top;
+}
+
+#nav li a {
+  display: block;
+  padding: 5px 12px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+#nav li a:hover {
+  background: rgba(230,126,34,0.9);
+  text-decoration: underline;
+}
+
+
+#nav ul {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  opacity: 0; 
+  width: 220px; 
+  margin-left: -110px;
+  background: #f8f9fa; 
+  border: 1px solid #ced4da; 
+  padding: 4px; 
+  list-style: none;
+  text-align: center; 
+}
+#nav ul li {
+  display: block;
+  margin: 0; 
+  padding-top: 1px;
+}
+
+#nav ul a {
+  display: block;
+  padding: 5px 10px;
+  background: transparent;
+  color: #212529; 
+}
+
+#nav li:hover ul {
+  left: 50%;
+  opacity: 1;
+}
+
+#nav li:hover a {
+  background: rgba(230,126,34,0.9);
+  text-decoration: underline;
+}
+
+#nav li:hover ul a {
+  text-decoration: none;
+  background: transparent;
+}
+
+#nav li:hover ul li a:hover {
+  background: rgba(230,126,34,0.9);
+  color: #fff;
+}
+
+
+.content {
+  padding: 30px 50px 130px; 
+}
+
+.category-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #343a40;
+  font-family: sans-serif;
+}
+
+.category-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e67e22;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.photorow {
+    display: flex;       
+    flex-wrap: wrap;     
+    gap: 20px;           
+    justify-content: center; 
+}
+
+.photo {
+    width: 28%; 
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+    padding: 15px 10px;
+    border: 1px solid #e0e0e0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.product-name {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+    height: 35px; 
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d35400; 
+    margin-top: 5px;
+}
+
+.footer {
+  height: 50px;
+  position: absolute; 
+  line-height: 50px; 
+  text-align: center; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529; 
+  color: #fff;
+}
